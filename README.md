@@ -1,16 +1,19 @@
 # OSA-screening
-This repository contains a machine learning model developed using XGBoost, 
-which has demonstrated the best accuracy for predicting the likelihood of 
-moderate to severe Obstructive Sleep Apnea (OSA) based on body profile features.
-The model utilizes key body measurements to assess the risk of OSA in individuals.
+This repository contains two machine learning models developed using XGBoost, which have demonstrated the best accuracy for predicting the likelihood of:
+- Moderate to severe OSA (AHI ≥ 15)
+- Severe OSA (AHI ≥ 30)  
 
-Input:
+Both models use key body profile features to assess the risk of OSA in individuals.  
 
-The model accepts the following body profile data as input:
-Age, Sex, BMI, Neck circumference, Waist circumference
+****
 
-Output:
+The models accept the following body profile data as input:  
+- Age (in years)
+- Sex (Male/Female)
+- Body Mass Index (BMI)
+- Neck circumference (in cm)
+- Waist circumference (in cm)
 
-The model outputs a prediction as either:
-0: Low risk of moderate to severe OSA
-1: High risk of moderate to severe OSA
+Each model outputs a prediction as either:
+- 0: Low risk of moderate to severe OSA (AHI ≥ 15) / severe OSA (AHI ≥ 30)
+- 1: High risk of moderate to severe OSA (AHI ≥ 15) / severe OSA (AHI ≥ 30)
